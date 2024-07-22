@@ -157,7 +157,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
+      title: "Frontend Developer",
       desc: "Collaborated with a local business to design and develop a custom e-commerce website using Shopify, increasing their online presence and sales.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
