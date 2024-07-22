@@ -1,6 +1,6 @@
 import React from 'react'
 import MagicButton from './ui/MagicButton'
-import { FaLocationArrow } from 'react-icons/fa6'
+import { FaDownload, FaLocationArrow } from 'react-icons/fa6'
 import { socialMedia } from '@/data'
 
 const Footer = () => {
@@ -12,6 +12,7 @@ const Footer = () => {
                 Ready to take <span className='text-purple'>your</span> digital presence to the next level?
             </h1>
             <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how I can help you achieve your goals.</p>
+            <div className='flex flex-col gap-2'>
             <a href="mailto:dejioyelakin@gmail.com">
                 <MagicButton
                     title="Let's get in touch"
@@ -19,6 +20,16 @@ const Footer = () => {
                     position='right'
                     />
             </a>
+            <a href="/Emmanuel Oyelakin's Resume .pdf" download>
+                <MagicButton
+                    title="Download My Resume"
+                    icon={<FaDownload />}
+                    position='right'
+                    
+                    />
+            </a>
+            </div>
+        
         </div>
 
         <div className='flex mt-16 md:flex-row flex-col justify-between items-center '>
@@ -35,10 +46,7 @@ const Footer = () => {
             </div>
         </div>
     </footer>
-    //  <a href="img/EmmanuelOyelakinResume(1).pdf" download class="btn btn2"
-    // >Download CV</a
-    // >
-    // 
+    
   )
 }
 
